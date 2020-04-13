@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/* google font */
+@font-face {
+  font-family: "Libre Baskerville Bold";
+  src: url("../font/Libre_Baskerville/LibreBaskerville-Bold.ttf");
+}
+/* endfont */
+.container{
+  max-width: 65%;
+  margin: 0 auto;
+}
+header{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  section#header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    div:first-child{
+      h1{
+         font-size: 35px;
+         font-family: 'Libre Baskerville Bold', serif;
+         span{
+           color:red;
+         }
+      }
+    }
+    div:last-child{
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        list-style-type: none;
+        li{
+          margin:0 15px;
+          a{
+            display: block;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.2s;
+            font-family: Helvetica, Tahoma, sans-serif;
+            color: #000;
+            &:hover{
+              border-bottom: 1.5px solid red;
+              padding-bottom: 5px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  section#header-bottom{
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div.header-bottom-left{
+      h2{
+        span{
+          display: block;
+          font-size: 65px;
+          font-family: 'Libre Baskerville Bold', serif;
+          &:first-child{color:#F24338;}
+          &:last-child{
+            color: #00184C;
+          }
+        }
+      }
+      p{
+        margin: 35px 0;
+        font-size: 16px;
+        line-height: 2
+
+        em;
+        padding-right: 30px;
+        color: #776C68;
+        font-family: Tahoma, velvetica, sans-serif;
+      }
+      div#header-bottom-learn-more{
+        margin-top: 80px;
+        button{
+          font-size: 15px;
+          font-weight: bold;
+          padding: 20px 70px;
+          border-radius: 30px;
+          text-transform: uppercase;
+          border: 3px solid #CC2228;
+          background-color: #F24338;
+          color: #FFF;
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 20px;
+          i{
+            font-size: 60px;
+            color: #3F8EEC;
+            border: 4px solid #3366D6;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+
+  }
+}
