@@ -21,9 +21,9 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     header section#header-top div:first-child h1 {
       font-size: 35px;
       font-family: 'Libre Baskerville Bold', serif; }
@@ -49,10 +49,11 @@ header {
           -webkit-transition: 0.2s;
           transition: 0.2s;
           font-family: Helvetica, Tahoma, sans-serif;
-          color: #000; }
+          color: #000;
+          padding-bottom: 5px;
+          border-bottom: 1.5px solid #fff; }
           header section#header-top div:last-child ul li a:hover {
-            border-bottom: 1.5px solid red;
-            padding-bottom: 5px; }
+            border-bottom: 1.5px solid red; }
   header section#header-bottom {
     margin: 60px auto;
     display: -webkit-box;
@@ -74,7 +75,7 @@ header {
     header section#header-bottom div.header-bottom-left p {
       margin: 35px 0;
       font-size: 16px;
-      line-height: 2 em;
+      line-height: 2em;
       padding-right: 30px;
       color: #776C68;
       font-family: Tahoma, velvetica, sans-serif; }
@@ -88,7 +89,9 @@ header {
         text-transform: uppercase;
         border: 3px solid #CC2228;
         background-color: #F24338;
-        color: #FFF; }
+        color: #FFF;
+        cursor: pointer;
+        outline: inherit; }
       header section#header-bottom div.header-bottom-left div#header-bottom-learn-more span {
         display: inline-block;
         vertical-align: middle;
@@ -97,6 +100,47 @@ header {
           font-size: 60px;
           color: #3F8EEC;
           border: 4px solid #3366D6;
-          border-radius: 100%; }
+          border-radius: 100%;
+          cursor: pointer; }
+
+main section.transimission-mode {
+  text-align: center;
+  margin-bottom: 60px; }
+  main section.transimission-mode div.descriptions {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+    main section.transimission-mode div.descriptions h1 {
+      font-family: "Libre Baskerville Bold", sans-serif;
+      font-size: 45px;
+      margin: 25px 0;
+      color: #00184C; }
+    main section.transimission-mode div.descriptions p {
+      font-family: Helvetica, sans-serif;
+      color: #5e626d;
+      line-height: 1.5em;
+      font-size: 15px; }
+  main section.transimission-mode div.elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 60px 0; }
+    main section.transimission-mode div.elements div {
+      margin-bottom: 40px;
+      width: 300px; }
+      main section.transimission-mode div.elements div h1 {
+        color: #00184C;
+        font-family: "Libre Baskerville Bold", sans-serif;
+        font-size: 25px;
+        margin-bottom: 25px; }
+      main section.transimission-mode div.elements div p {
+        line-height: 1.5em;
+        font-weight: roboto, sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
